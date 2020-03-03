@@ -277,6 +277,7 @@ if [ "${os}" = "Windows" ]; then
 
   sshpass -p "${password}" ssh -o StrictHostKeyChecking=no ${user}@${host} "${REM_DIR}/${FILE7}" ${REM_DIR}
   echo "=== End of execution ==="
+  sleep 3h
   echo "Retrieving reports from instance.. "
   mkdir -p ${OUTPUTS_DIR}/scenarios/integration-tests
   sshpass -p "${password}" scp -r -q -o StrictHostKeyChecking=no ${user}@${host}:${REM_DIR}/product-apim/modules/integration/tests-integration/tests-backend/target/surefire-reports ${OUTPUTS_DIR}/scenarios/integration-tests/
