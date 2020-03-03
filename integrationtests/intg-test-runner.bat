@@ -30,5 +30,8 @@ call env\Scripts\activate.bat
 rem install packages to the virtual environment
 env\Scripts\pip.exe install -r requirements.txt
 
+rem updating M2_home directory
+set M2_HOME=C:\Users\Administrator\Downloads\apache-maven-3.3.9-bin\apache-maven-3.3.9
+
 rem run the run-intg-test.py script
 python run-intg-test.py
