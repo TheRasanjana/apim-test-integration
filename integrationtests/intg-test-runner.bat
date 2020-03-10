@@ -34,9 +34,10 @@ rem updating M2_home directory
 set M2_HOME=C:\Users\Administrator\Downloads\apache-maven-3.3.9-bin\apache-maven-3.3.9
 
 rem Deleting unwanted java paths 
-del C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
-del C:\Program Files (x86)\Common Files\Oracle\Java\javapath\javaw.exe
-del C:\Program Files (x86)\Common Files\Oracle\Java\javapath\javaws.exe
+cd C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+del java.exe
+del javaw.exe
+del javaws.exe
 
 rem updating PATH for java
 set PATH=%PATH%;%JAVA_HOME%/bin;
