@@ -33,5 +33,13 @@ env\Scripts\pip.exe install -r requirements.txt
 rem updating M2_home directory
 set M2_HOME=C:\Users\Administrator\Downloads\apache-maven-3.3.9-bin\apache-maven-3.3.9
 
+rem Deleting unwanted java paths 
+del C:\Program Files (x86)\Common Files\Oracle\Java\javapath\java.exe
+del C:\Program Files (x86)\Common Files\Oracle\Java\javapath\javaw.exe
+del C:\Program Files (x86)\Common Files\Oracle\Java\javapath\javaws.exe
+
+rem updating PATH for java
+set PATH=%PATH%;%JAVA_HOME%/bin;
+
 rem run the run-intg-test.py script
 python run-intg-test.py
