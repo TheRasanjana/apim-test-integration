@@ -43,4 +43,5 @@ rem updating PATH for java
 set PATH=%PATH%;%JAVA_HOME%/bin;
 
 rem run the run-intg-test.py script
+cd %WD%
 python run-intg-test.py
