@@ -285,7 +285,6 @@ if [ "${os}" = "Windows" ]; then
   sshpass -p "${password}" scp -q -o StrictHostKeyChecking=no ${user}@${host}:${REM_DIR}/output.properties ${OUTPUTS_DIR}/scenarios/integration-tests/
   echo "=== Reports retrieved successfully ==="
   set -o xtrace
-  sleep 3h
 else
   #for all UNIX instances
   ssh -o StrictHostKeyChecking=no -i ${key_pem} ${user}@${host} mkdir -p ${REM_DIR}
